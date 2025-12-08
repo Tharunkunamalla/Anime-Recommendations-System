@@ -8,10 +8,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load Data + TF-IDF Model (CORRECT LOADING)
 # -------------------------------------------------------
 
-anime_data = pd.read_pickle("anime_data.pkl")              # Full anime dataframe
-anime_indices = pd.read_pickle("anime_index_lower.pkl")          # Mapping: title → index
+anime_data = pd.read_pickle("pkl/anime_data.pkl")              # Full anime dataframe
+anime_indices = pd.read_pickle("pkl/anime_index_lower.pkl")          # Mapping: title → index
 
-with open("tfidf_model.pkl", "rb") as f:                   # Load tuple (tfidf, matrix)
+with open("pkl/tfidf_model.pkl", "rb") as f:                   # Load tuple (tfidf, matrix)
     tfidf, tfidf_matrix = pickle.load(f)
 
 # -------------------------------------------------------
@@ -56,7 +56,7 @@ def recommend_content(title, top_n=5):
 st.set_page_config(page_title="Anime Recommendation System", layout="wide")
 
 st.title("🎌 Anime Recommendation System")
-st.write("Find similar anime instantly using **TF-IDF + Cosine Similarity (On-Demand)**")
+st.write("Find similar anime instantly using **TF-IDF + Cosine Similarity**")
 
 search = st.text_input("Search Anime", "")
 
