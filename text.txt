@@ -1,0 +1,30 @@
+how cosine-similarity works...
+Naruto → [0.1, 0.4, 0.0, 0.7, 0.2]
+Bleach → [0.1, 0.5, 0.1, 0.6, 0.2]
+Naruto: →→→
+Bleach: →→↗
+
+multiply each number: 
+0.1×0.1 = 0.01
+0.4×0.5 = 0.20
+0.0×0.1 = 0.00
+0.7×0.6 = 0.42
+0.2×0.2 = 0.04
+
+add them up:
+0.01 + 0.20 + 0.00 + 0.42 + 0.04 = 0.67
+
+divide by the lengths of the vectors
+Step 3 — normalize by vector lengths
+(the result always becomes between 0 and 1)
+
+cosine_similarity(Naruto, Bleach) = 0.82
+
+
+| Score    | Meaning              |
+| -------- | -------------------- |
+| **1.00** | Exactly the same     |
+| **0.80** | Very similar         |
+| **0.50** | Somewhat similar     |
+| **0.20** | Not very similar     |
+| **0.00** | Completely different |
