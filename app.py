@@ -8,10 +8,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load Data + TF-IDF Model (CORRECT LOADING)
 # -------------------------------------------------------
 
-anime_data = pd.read_pickle("pkl/anime_data.pkl")              # Full anime dataframe
-anime_indices = pd.read_pickle("pkl/anime_index_lower.pkl")          # Mapping: title → index
+anime_data = pd.read_pickle("anime_data.pkl")              # Full anime dataframe
+anime_indices = pd.read_pickle("anime_index_lower.pkl")          # Mapping: title → index
 
-with open("pkl/tfidf_model.pkl", "rb") as f:                   # Load tuple (tfidf, matrix)
+with open("tfidf_model.pkl", "rb") as f:                   # Load tuple (tfidf, matrix)
     tfidf, tfidf_matrix = pickle.load(f)
 
 # -------------------------------------------------------
