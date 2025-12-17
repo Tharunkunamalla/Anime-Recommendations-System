@@ -87,6 +87,36 @@ The application will open in your default web browser at `http://localhost:8501`
 
 Search for "Naruto" to get recommendations for similar action/adventure anime titles.
 
+## 📸 Application Interface & Results
+
+### Initial Interface
+![Application Interface](https://github.com/user-attachments/assets/b7c8054f-560c-4b37-8a97-643e914dbdfa)
+
+The application features a clean, intuitive interface where users can:
+- Enter an anime title in the search box
+- Click the "Recommend" button to get similar anime suggestions
+- View recommendations with poster images, ratings, genres, and synopses displayed in a grid layout
+
+### Sample Output
+
+When you search for an anime (e.g., "Naruto"), the system generates recommendations based on genre similarity:
+
+**Example: Recommendations for "Naruto"**
+
+| # | Anime Title | Type | Rating | Genres |
+|---|------------|------|--------|--------|
+| 1 | Naruto Shippuuden: Sunny Side Battle | Special | 7.26 | Action, Comedy, Martial Arts, Shounen, Super Power |
+| 2 | Naruto: Shippuuden Movie 4 - The Lost Tower | Movie | 7.53 | Action, Comedy, Martial Arts, Shounen, Super Power |
+| 3 | Boruto: Naruto the Movie | Movie | 8.03 | Action, Comedy, Martial Arts, Shounen, Super Power |
+| 4 | Naruto: Shippuuden | TV | 7.94 | Action, Comedy, Martial Arts, Shounen, Super Power |
+| 5 | Naruto: Shippuuden Movie 3 - Hi no Ishi wo Tsugu Mono | Movie | 7.50 | Action, Comedy, Martial Arts, Shounen, Super Power |
+
+Each recommendation is displayed with:
+- **Poster Image**: Fetched in real-time from the Jikan API
+- **Rating**: Current MyAnimeList score
+- **Genres**: Comma-separated genre tags
+- **Synopsis**: Brief description of the anime (truncated to 250 characters)
+
 ## 📁 Project Structure
 
 ```
