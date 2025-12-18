@@ -217,5 +217,3 @@ This project is open source and available under the MIT License.
 For questions or suggestions, please open an issue on GitHub.
 
 ---
-
-**Note**: This is an educational project demonstrating content-based recommendation systems and web application development with Python.
