@@ -180,7 +180,7 @@ The Jikan API has rate limits. The application includes caching (`@st.cache_data
 
 ## 🌐 Live Demo
 
-The application is hosted at: [www.anime-recommendations-system.com](http://www.anime-recommendations-system.com)
+The application is hosted at: [www.anime-recommendations-system.com](https://anime-recommendations-system.streamlit.app/)
 
 ## 🤝 Contributing
 
